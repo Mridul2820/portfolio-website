@@ -16,10 +16,12 @@ $bp-smallest: 28em;     //448px
 
     --preview-background: rgba(251, 249, 243, 0.8);
     --preview-shadow: #f0ead6;
-	--button-color:black;
+	--button-color:#000;
 
     --primary-text: #000;
     --secondary-text: #4b5156;
+
+    --github-color: #000;
 }
 
 * {
@@ -30,6 +32,10 @@ $bp-smallest: 28em;     //448px
 
 body {
     font-family: 'Raleway', sans-serif;
+
+    * {
+        transition: .5s;
+    }
 }
 
 strong {
@@ -188,6 +194,10 @@ li {
         li {
             display: inline-block;
             margin: 0 5px;
+        }
+
+        a {
+            color: var(--primary-text);
         }
     }
 }
@@ -402,7 +412,7 @@ li {
             }
 
             .fa-github {
-                color: #24292e;
+                color: var(--github-color);
             }
         }
     }

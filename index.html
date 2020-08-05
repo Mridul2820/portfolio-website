@@ -6,6 +6,9 @@
     <title>Mridul</title>
 
     <link rel="stylesheet" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" href="">
+
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
@@ -36,10 +39,10 @@
                     <img id="profile-photo" src="assets/mridul.jpg" alt="mridul">
                     <h5>Personalize Theme</h5>
                     <div id="theme-option-wrapper">
-                        <div class="theme-dot" id="theme-light"></div>
-                        <div class="theme-dot" id="theme-blue"></div>
-                        <div class="theme-dot" id="theme-green"></div>
-                        <div class="theme-dot" id="theme-purple"></div>
+                        <div data-mode="light" class="theme-dot" id="theme-light"></div>
+                        <div data-mode="blue" class="theme-dot" id="theme-blue"></div>
+                        <div data-mode="green" class="theme-dot" id="theme-green"></div>
+                        <div data-mode="purple" class="theme-dot" id="theme-purple"></div>
                     </div>
 
                     <p id="theme-note">
@@ -213,5 +216,7 @@
             </form>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
