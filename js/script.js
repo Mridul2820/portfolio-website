@@ -19,22 +19,21 @@ for(var i = 0; themeDots.length > i; i++) {
 
 function setTheme(mode) {
     if (mode == 'light') {
-        themeStyle.href = `default.css`;
+        themeStyle.href = `css/default.css`;
     }
 
     if (mode == 'blue') {
-        themeStyle.href = `blue.css`;
+        themeStyle.href = `css/blue.css`;
     }
 
     if (mode == 'green') {
-        themeStyle.href = `green.css`;
+        themeStyle.href = `css/green.css`;
     }
 
     if (mode == 'purple') {
-        themeStyle.href = `purple.css`;
+        themeStyle.href = `css/purple.css`;
     }
 
     localStorage.setItem('theme', mode);
 }
-
 
